@@ -17,8 +17,10 @@ function fn1() {
 let rad = (bore /2 );
 let vol = Math.PI * rad * rad * stroke * cyl / 1000;
 
+let n = vol.toFixed(2);
 
-let sentence = `<h1>${vol}</h1>`
+
+let sentence = `<h1>${n}</h1>`
 document.querySelector('main').innerHTML = sentence;
 
 
